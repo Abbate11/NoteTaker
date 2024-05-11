@@ -11,14 +11,16 @@ router.get('/notes', (req, res) => {
     })
 });
 
-//get routes for homepage
+//post routes for notes
 router.post('/notes', (req, res) => {
-
+    store.addNote().then((note) => {
+        
+    })
 });
 
 //delete route for notes
 router.delete('/notes', (req, res) => {
-
+    
 });
 
 module.exports = router

@@ -1,4 +1,4 @@
-const path = require('path');
+
 const router = require('express').Router();
 
 //get route for notes page

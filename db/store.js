@@ -16,7 +16,7 @@ class Store {
                 parsedNotes = [].concat(JSON.parse(notes));
             }catch (err){
                 console.log(err)
-                parseNotes = []
+                parsedNotes = []
             }
 
             return parsedNotes;
@@ -24,7 +24,9 @@ class Store {
     }
 
     addNote(note){
-
+        return this.write(note).then((note) => {
+             
+        })
     }
 
     removeNote(id){
